@@ -1,0 +1,63 @@
+
+ul{
+	list-style: none;
+	margin-top: 0;
+}
+
+li{
+	float: left;
+	height: 32px;
+	width: 60px;
+	line-height: 32px;
+	background-color: #ccc;
+	text-align: center;
+	position: relative;
+	margin-left: 10px;
+	
+}
+
+li:hover{
+				background-color:red;
+				color: green;
+			}
+
+.child{
+	display: block;
+	position: absolute;
+	top: 32px;
+	left: 0;
+	width: 58px;
+	height: 0px;
+	border: 1px solid red;
+	border-top: 0;
+	transition: all 0.2s linear;
+	overflow: hidden;
+}
+.div2{			float: left;
+				width:800px;
+				height:500px;
+				position:absolute;
+				border: 1px solid red;
+				margin-top:17px;
+				margin-left:180px;
+				
+				}
+.div1{
+				float: left;
+				width:128px;
+				height:200px;
+				position: absolute;
+				border: 1px solid red;
+				margin-top:17px;
+				margin-left:50px;
+				}				
+.div3{
+	width: 800px;
+	height: 50px;
+	background-color: #CCCCCC;
+	margin-top:0px;
+	margin-left: 50px;
+}
+
+
+

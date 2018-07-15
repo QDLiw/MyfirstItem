@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天气查询</title>
+	<link rel="stylesheet" href="iconfont.css"/>
+	<link rel="stylesheet" href="weather.css"/>
+	<script src="jquery-3.3.1.js"></script>
+	<!-- <embed src="music.mp3" hidden="true" autostart="true" loop="true"> -->
+</head>
+<body>
+        <div class="wrap clearfix">
+                <div class="header">
+                    <input class="intCity" type="text" placeholder="请输入城市" value="杭州">
+                    <input class="searchBtn" type="button" value="查询">
+                </div>
+                <div class="left">
+                    <ul>
+                        <li><span><i class="icon iconfont icon-chengshi"></i></span><span class="cityName span2"></span></li>
+                        <li><span><i class="icon iconfont icon-riqi"></i></span><span class="left_date span2"></span></li>
+                        <li><span><i class="icon iconfont icon-tianqi"></i></span><span class="left_weather span2"></span></li>
+                        <li><span><i class="icon iconfont icon-wendu"></i></span><span class="left_temp span2"></span></li>
+                        <li><span><i class="icon iconfont icon-fengxiang"></i></span><span class="left_wind1 span2"></span></li>
+						<li><span><i class="icon iconfont icon-fengli"></i></span><span class="left_wind2 span2"></span></li>
+                    </ul>
+                </div>
+		</div>
+		<script>
+		$(".searchBtn").click(function(){
+			var city=$(".intCity").val();
+				getWeather(city,"post");
+		});
+		//location:输入的城市
+		//type:发送ajax的请求方式（get/post）
+		//封装ajax,不用写到click函数里面
+		function getWeather(location,type){
+			var key="8e372dd65f362993d2c5b768e9a2ca0e";
+			var url="https://restapi.amap.com/v3/weather/weatherInfo?parameters";
+			//外部创建一个对象，该对象包括了所有参数，属于一种封装
+			var postData={
+				key:key,//左边的key是传的参数，右边的是变量
+				city:location,
+				extensions:"base",
+				output:"json"
+			}
+			$.ajax({
+				url:url,
+				type:type,//调用getWeather方法里传的参数type
+				data:postData,
+				success:function(status){//发送ajax成功之后执行的function().data为返回的数据,即为最终的结果，现在需要解析并显示在页面。
+					
+					var weatherdata=status.lives[0];
+					console.log(weatherdata);
+					 $(".cityName").html("城市："+weatherdata.province+ weatherdata.city);
+					 $(".left_weather").html("天气："+weatherdata.weather);
+					 $(".left_temp").html("温度："+weatherdata.temperature+"C");
+					 $(".left_wind1").html("风向："+weatherdata.winddirection+"风");
+					 $(".left_date").html("日期："+weatherdata.reporttime);
+					 $(".left_wind2").html("风力："+weatherdata.windpower+"级");
+				}
+
+
+			})
+
+		};
+		
+		</script>
+    
+</body>
+</html>

@@ -1,0 +1,149 @@
+.banner {
+	position: absolute;
+	z-index: 10;
+	width: 1226px;
+	margin-top: -420px;
+	margin-left: 65px;
+}
+
+.banner .container {
+	width: 1226px;
+	position: relative;
+	margin: 0px auto;
+	height: 420px;
+	overflow: hidden;
+	padding: 0;
+}
+
+.banner img {
+	display: block;
+	max-width: 100%
+}
+
+
+/*图片显示区域样式*/
+
+.banner .banner-img {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 460px;
+}
+
+
+
+.banner .banner-img .slide {
+	display: none;
+	width: 1226px;
+	height: 460px;
+	float: none;
+	list-style: none;
+	position: absolute;
+	width: 1226px;
+	z-index: 10;
+}
+
+.banner .banner-img .slide-first {
+	display: block;
+}
+
+.banner .banner-img .slide a {
+	display: block
+}
+
+.banner .banner-img .slide img {
+	width: 1226px;
+	height: 460px
+}
+
+
+/*图片显示区域样式*/
+
+
+/*上页、下页按钮的样式*/
+
+.banner .banner-paging a {
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	z-index: 999;
+	width: 41px;
+	height: 69px;
+	text-indent: -9999px;
+	/*不显示文字*/
+	overflow: hidden;
+	outline: 0
+}
+
+.banner .banner-paging .page-prev {
+	left: 234px;
+	background: url(../img/icon-slides.png) no-repeat -84px 50%
+}
+
+.banner .banner-paging .page-next {
+	right: 0;
+	background: url(../img/icon-slides.png) no-repeat -125px 50%
+}
+
+.banner .banner-paging .page-prev:hover {
+	background-position: 0 50%
+}
+
+.banner .banner-paging .page-next:hover {
+	background-position: -42px 50%
+}
+
+
+/*上页、下页按钮的样式*/
+
+
+/*小圆点样式设置*/
+
+.banner .banner-dot {
+	font-size: 12px;
+	color: #666;
+	position: absolute;
+	z-index: 999;
+	display: block;
+	left: auto;
+	right: 30px;
+	bottom: 20px;
+	width: 400px;
+	text-align: right;
+}
+
+.banner .banner-dot .banner-dot-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline
+}
+
+.banner .banner-dot a {
+	display: block;
+	width: 6px;
+	height: 6px;
+	margin: 0 5px;
+	border: 2px solid #fff;
+	border-color: rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+	text-align: left;
+	text-indent: -9999px;
+	overflow: hidden;
+	_zoom: 1;
+	background: #f5f5f5;
+	background: rgba(0, 0, 0, 0.4);
+	-webkit-transition: all .2s;
+	transition: all .2s
+}
+
+.banner .banner-dot a:hover,
+.banner .banner-dot a.active {
+	background: rgba(255, 255, 255, 0.4);
+	border-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner .banner-dot a:focus {
+	outline: 0;
+}
+
+/*小圆点样式设置*/

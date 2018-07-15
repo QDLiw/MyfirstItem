@@ -1,0 +1,112 @@
+
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			ul,
+			li {
+				list-style: none;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				background: rgb(51, 199, 248);
+			}
+			
+			input {
+				border: none;
+				outline: none;
+			}
+			
+			.clearfix:after {
+				content: "";
+				height: 0;
+				line-height: 0;
+				display: block;
+				clear: both;
+			}
+			
+			.clearfix {
+				zoom: 1;
+			}
+			
+			.wrap {
+				width: 600px;
+				min-height: 300px;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin-left: -300px;
+				margin-top: -150px;
+			}
+			
+			.wrap .header {
+				width: 100%;
+				height: 40px;
+				position: relative;
+				line-height: 40px;
+				border: 1px solid rgb(51, 199, 248);
+				border-radius: 4px;
+			}
+			
+			.wrap .header .intCity {
+				width: 80%;
+				height: 40px;
+				line-height: 40px;
+				font-size: 16px;
+				text-indent: 10px;
+			}
+			
+			.wrap .header .searchBtn {
+				width: 18%;
+				height: 38px;
+				line-height: 38px;
+				font-size: 16px;
+				color: #fff;
+				text-align: center;
+				border: 1px solid #fff;
+				background: rgb(51, 199, 248);
+				font-weight: 600;
+				cursor: pointer;
+			}
+			
+			.wrap .left {
+				width: 400px;
+				min-height: 300px;
+				text-align: left;
+				margin-left: 30px;
+				padding-top: 20px;
+			}
+			
+			.wrap .left li {
+				height: 40px;
+				line-height: 40px;
+				font-size: 20px;
+				color: yellow;
+			}
+			
+			.wrap .left li i {
+				font-size: 20px;
+				color: yellow;
+			}
+			
+			.wrap .left li .span2 {
+				margin-left: 30px;
+			}
+			
+			.wrap .left li .cityName {
+				font-size: 20px;
+			}
+			
+			input {
+				outline: none;
+				border: none;
+				height: 30px;
+			}
+			

@@ -1,0 +1,155 @@
+a {
+	text-decoration: none;
+}
+
+.star {
+	position: relative;
+	z-index: 10;
+	width: 1226px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.star .star-top {
+	position: relative;
+	height: 58px;
+	width: 1226px;
+}
+
+.star .star-top .title {
+	margin: 170px;
+	font-size: 22px;
+	font-weight: 200;
+	line-height: 58px;
+	margin-left: 10px;
+	color: #333
+}
+
+.star .star-top .more {
+	position: absolute;
+	top: 24px;
+	right: 0;
+}
+
+.star .star-top .more .control {
+	margin-left: -1px;
+	width: 24px;
+	height: 16px;
+	padding: 3px 5px;
+	border: 1px solid #e0e0e0;
+	font-size: 16px;
+	line-height: 16px;
+	display: inline-block;
+	text-align: center;
+	color: #b0b0b0;
+	-webkit-transition: color .5s;
+	transition: color .5s
+}
+
+.star .star-top .more .control:focus {
+	outline: 0
+}
+
+.star .star-top .more .control:hover,
+.star .star-top .more .control.active {
+	color: #ff6700
+}
+
+.star .star-top .more .control-disabled {
+	cursor: default;
+	color: #e0e0e0;
+}
+
+.star .star-top .more .control-disabled:hover {
+	color: #e0e0e0;
+}
+
+.star .star-content {
+	position: relative;
+	width: 1226px;
+	height: 340px;
+	overflow: hidden;
+	padding-bottom: 40px
+}
+
+.star .goods-list {
+	width: 3720px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	transition: margin-left 0.5s ease 0s;
+	height: 340px;
+	overflow: hidden;
+}
+
+.star .goods-list li {
+	height: 300px;
+	padding-top: 39px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	text-align: center;
+	background: #fafafa;
+	-webkit-transition: all .6s;
+	transition: all .6s;
+	float: left;
+	width: 234px;
+	margin-right: 14px
+}
+
+.star .goods-list li:hover {
+	z-index: 2
+}
+
+.star .goods-list .thumb {
+	display: block;
+	width: 160px;
+	margin: 0 auto 22px
+}
+
+.star .goods-list .thumb img {
+	width: 160px;
+	height: 160px
+}
+
+.star .goods-list .title {
+	margin: 0 20px 3px;
+	font-size: 14px;
+	font-weight: 400;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.star .goods-list .title,
+.star .goods-list .title a {
+	color: #212121
+}
+
+.star .goods-list .desc {
+	height: 18px;
+	margin: 0 20px 12px;
+	font-size: 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	_zoom: 1;
+	color: #b0b0b0
+}
+
+.star .goods-list .price {
+	margin: 0;
+	color: #ff6709
+}
+
+.star .goods-list .rainbow-item-1 {
+	border-top-color: #ffac13
+}
+
+.star .goods-list .rainbow-item-2 {
+	border-top-color: #83c44e
+}
+
+.star .goods-list .rainbow-item-3 {
+	border-top-color: #2196f3
+}
